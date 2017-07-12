@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>基于js-xlsx读取excel数据</title>
+<style type="text/css">
+.select
+{
+    margin:10px 0;
+}
+.select input
+{
+     margin-right: 5px;
+     height: 23px;
+}
+.excelData table
+{
+    border:1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+}
+.excelData table td,.excelData table th
+{
+    text-align: center;
+    border:1px solid #ccc;
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div class="container">
+    <input type="file" value="上传excel" onchange="readExcel(this.files)">
+</div>
+<div class="select"></div>
+<div class="excelData"></div>
+<script src="xlsx.core.min.js"></script>
+<script src="excel.js"></script>
+<script>
+//识别链接
+// function htmlUrl() {
+//     var reg = /^(http:\/\/|https:\/\/)((\w|\:|\#|=|\?|\.|\/|&|-)$+)/g;
+//     var str='http://localhost:9000/#/ziyuan/view/36943';
+//     str= str.replace(reg, '<a href="$1$2">$1$2</a>');
+//     alert(str);
+// }
+</script>
+</body>
+</html>
